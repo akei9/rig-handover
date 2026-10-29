@@ -30,6 +30,20 @@ Closing one, with the closing comment from AGENTS.md:
 gh issue close <n> -c "<closing comment>"
 ```
 
+## What every issue here carries
+
+Decided by the human on 2026-10-29 (plan morning-digest, issues #1–#8). Step 4 is answered by this
+section until a human changes it.
+
+- First line: `Source: plan.md § <n>` (the plan's section, e.g. `§ 2a`). The reviewer sorts by it.
+- Label: `plan:<plan name>` from the plan's frontmatter (e.g. `plan:morning-digest`).
+- Sections: **Scope** · **Done when** (the plan's line, checkable) · **Blocked by** (real `#n`;
+  "to start" vs "to be done" when they differ) · **Worker** (suggested `harness · model · effort`).
+- An issue that ends with someone else's look (a review, a reply) is done only when they have
+  looked. "Sent" is not done: leave it open and say what it waits on (AGENTS.md rule 5).
+- `closes #n` in a pushed commit closes the issue at once: post the closing comment
+  (`gh issue close <n> -c …`) before you push that commit.
+
 ## No `gh`
 
 Steps 1–4 hold either way. GitHub reachable another way (a connector, the REST API, the web UI):
